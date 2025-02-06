@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelScene02 : MonoBehaviour
+public class LevelLoader : MonoBehaviour
 {
+    [SerializeField] private string sceneToLoad; 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }
-
