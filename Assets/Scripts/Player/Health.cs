@@ -79,7 +79,7 @@ public class Health : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    //Respawn
+    
     public void Respawn()
     {
         AddHealth(startingHealth);

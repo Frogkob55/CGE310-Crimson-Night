@@ -170,12 +170,12 @@ public class PlayerController : MonoBehaviour
     {
         if (moveInput.x > 0 && !IsFacingRight)
         {
-            // Face Right
+            
             IsFacingRight = true;
         }
         else if (moveInput.x < 0 && IsFacingRight)
         {
-            // Face Left
+            
             IsFacingRight = false;
         }
     }
